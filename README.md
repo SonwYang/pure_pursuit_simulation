@@ -7,9 +7,7 @@
 ```bash
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
-git clone https://e.coding.net/yunshitu/navigation_and_planning/pure_pursuit_ws.git
-git clone https://github.com/ros-mobile-robots/diffbot.git
-#### 拷贝pure_pursuit和trajectory_publisher到src中
+git clone https://github.com/SonwYang/pure_pursuit_simulation.git
 catkin_make
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 ```
