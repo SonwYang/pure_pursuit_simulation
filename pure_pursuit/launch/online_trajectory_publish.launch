@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="pure_pursuit" type="online_trajectory_publish_node" name="online_trajectory_publish_node"  output="screen">
+        <param name="topicOdom" value="/raw_odom" />
+    </node> 
+</launch>
+

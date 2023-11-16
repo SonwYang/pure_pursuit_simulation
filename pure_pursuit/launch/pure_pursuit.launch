@@ -1,0 +1,13 @@
+<launch>
+    <node pkg="pure_pursuit" type="purepursuit_node" name="purepursuit_node"  output="screen">
+        <param name="Ld" value="0.13" />
+        <param name="PREVIEW_DIS" value="0.5" />
+        <param name="linearVel" value="1.0" />
+        <param name="isReverse" value="true" />
+        <param name="topicTrajectory" value="/splinepoints" />  
+        <param name="topicCmdVel" value="/diffbot/mobile_base_controller/cmd_vel" />  <!--底盘速度话题-->
+        <param name="topicCurrentPose" value="/diffbot/mobile_base_controller/odom" /> <!--实时定位话题-->
+        <param name="filePath" value="/home/yp/ros1/catkin_ws/odom_points.txt" /> <!--轨迹文件-->
+    </node> 
+</launch>
+
